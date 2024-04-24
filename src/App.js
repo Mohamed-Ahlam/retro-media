@@ -27,7 +27,6 @@ const addToCart = (id, type, title) =>{
 }
 
 return (
-  
     <div>
       
     <div className="title">
@@ -36,6 +35,8 @@ return (
     
 
     <MediaList array = {array} addToCart = {addToCart}/>
+
+    <MediaItem />
     </div>
       
   );

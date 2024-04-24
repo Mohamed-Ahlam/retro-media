@@ -1,4 +1,4 @@
-import React from 'react' // do i need this?
+import React from 'react' 
 
 function MediaItem(props){
 

@@ -1,19 +1,18 @@
-import React from 'react' // do i need this?
+import React from 'react' 
 import MediaItem from './MediaItem';
 
 function MediaList(props){
+
+    const {array, addToCart} = props
     
     return (
         <>
-
        <ul >
-        {props.array.map((item) => <MediaItem key={item.id} type = {item.type} title = {item.title} addToCart={props.addToCart}/>)}
+        {array.map((item) => <MediaItem key={item.id} type = {item.type} title = {item.title} addToCart={addToCart}/>)}
        </ul>
 
         </>
     );
-
-
 
 }
 
