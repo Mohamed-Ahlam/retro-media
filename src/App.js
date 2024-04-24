@@ -15,23 +15,21 @@ function App() {
   ];
 
 
-    //1. cart list 
-    //2. useState holds hold data about the media items and any user interactions
-    // if they click add cart - it adds to cart array 
-
-// The parent component needs to maintain either a 'logged in' or 'logged out' state in order to work as intended, so it should be stateful. 
-  
-
-    
 const [cart, setCart] = useState([])
 
-
+const addToCart = (id, type, title) =>{
+  setCart(
+    [...cart, {
+    id: id,
+    type: type,
+    title: title
+  }])
+}
 
 return (
   
     <div>
       
-
     <div className="title">
     <h1>Retro Media</h1>
     </div>
