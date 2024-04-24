@@ -4,7 +4,8 @@ function MediaItem(props){
 
     return (
         <li>
-            <a>{props.type} {props.title}</a>
+            <a>Type: {props.type} Title: {props.title}</a>
+            <button onClick={props.addToCart(props.id,props.type, props.title)}>Add</button>
         </li>
     )
 }
