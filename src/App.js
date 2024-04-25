@@ -1,7 +1,4 @@
-import {
-  useState,
-  useRef
-} from "react"; 
+import {useState} from "react"; 
 import "./App.css";
 
 import MediaList from "./components/MediaList"
@@ -24,6 +21,8 @@ const addToCart = (id, type, title) =>{
     type: type,
     title: title
   }])
+
+  console.log("added to cart")
 }
 
 return (
@@ -36,7 +35,6 @@ return (
 
     <MediaList array = {array} addToCart = {addToCart}/>
 
-    <MediaItem />
     </div>
       
   );
