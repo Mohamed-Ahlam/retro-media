@@ -3,12 +3,12 @@ import MediaItem from './MediaItem';
 
 function MediaList(props){
 
-    const {array, addToCart} = props
+    const {listOfItems, addToCart, removeFromCart} = props
     
     return (
         <>
        <ul >
-        {array.map((item) => <MediaItem key={item.id} type = {item.type} title = {item.title} addToCart={addToCart}/>)}
+        {listOfItems.map((item) => <MediaItem key={item.id} item={item} addToCart={addToCart} removeFromCart={removeFromCart} />)}
        </ul>
 
         </>

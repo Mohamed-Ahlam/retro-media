@@ -9,18 +9,27 @@ Enhance your Retro React Media assignment by introducing advanced features such 
 
 ## Application Features
 
-### Routing and Detail Pages
+### Routing and Detail Pages        ** medium 
 - **Navigation Management**: Utilize React Router to manage navigation between different parts of the application.
 - **Dynamic Routing**: Set up a route for each type of media (VHS, DVD, CD) and a home route. Each section for each media type should have more information for users to view
 
-### Event Handling Enhancements
+### Event Handling Enhancements     **DONE ?
 - **Interactive Cart Management**: Add a "Remove from Cart" button with an event handler in the MediaItem component to manage user interactions dynamically.
 
-### Prop Drilling and Component Communication
+### Prop Drilling and Component Communication      ** easy
 - **Deeper Interaction**: Pass a "toggle favorite" function down multiple levels to allow marking items as favorite, demonstrating deeper component interaction and the use of props for component communication.
 
-### Additional Components
+### Additional Components       ** hard
 - **Message Component**: Implement a feedback mechanism that alerts users when they add or remove items from their cart.
+
+- how to do this?
+- alerts? 
+- event handler?
+
+- also how will it pop up 
+    - maybe under a cart image? 
+    - maybe just at the top? 
+
 
 ## Requirements
 
